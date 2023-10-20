@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/feedback.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <title>Epicode - Feedback page</title>
+  </head>
+  <body>
+    <header class="Logo">
+      <img src="assets/img/epicode_logo.png" alt="Logo EPICODE" width="160px" />
+    </header>
+    <main>
+      <div class="title">
+        <h1>Tell us how it's going</h1>
+        <h3>
+          From 0 to 10, how likely are you to recommend EPICODE <br />
+          to a friends or a colleague?
+        </h3>
+      </div>
+      <div id="stars">
+        <span class="star" onclick="setRating(1)">&#9733;</span>
+        <span class="star" onclick="setRating(2)">&#9733;</span>
+        <span class="star" onclick="setRating(3)">&#9733;</span>
+        <span class="star" onclick="setRating(4)">&#9733;</span>
+        <span class="star" onclick="setRating(5)">&#9733;</span>
+        <span class="star" onclick="setRating(6)">&#9733;</span>
+        <span class="star" onclick="setRating(7)">&#9733;</span>
+        <span class="star" onclick="setRating(8)">&#9733;</span>
+        <span class="star" onclick="setRating(9)">&#9733;</span>
+        <span class="star" onclick="setRating(10)">&#9733;</span>
+      </div>
+      <div id="comment-area">
+        <h3>Leave us an open feedback about your experience so far</h3>
+        <textarea
+          class="inter"
+          id="comment"
+          placeholder="Write your comment here"
+        ></textarea>
+        <div id="line"></div>
+        <br />
+
+        <button id="moreInfo" onclick="submitFeedback()">
+          <span>MORE INFO</span>
+        </button>
+      </div>
+      <script src="./js/feedback.js"></script>
+    </main>
+  </body>
+</html>

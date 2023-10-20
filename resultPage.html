@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/resultPage.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <title>Epicode - Results Page</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/epicode_logo.png" alt="logo" width="160px" />
+    </header>
+
+    <main>
+      <div id="resultWrap">
+        <h1>Results</h1>
+        <h3>The summary of your answers:</h3>
+      </div>
+
+      <div id="container-wrap">
+        <div id="correct-wrap" class="container">
+          <div><h2>Correct</h2></div>
+          <div id="correctPerc"></div>
+          <div class="inter"><span id="numOfCorrect"></span>/10 questions</div>
+        </div>
+
+        <div id="circle-wrap" class="container">
+          <div id="circle">
+            <!-- GRAFICO -->
+            <div class="flex-wrapper">
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart blue" id="circ">
+                  <path
+                    class="circle-bg"
+                    d="M18 2.0845
+a 15.9155 15.9155 0 0 1 0 31.831
+a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path
+                    class="circle_1"
+                    stroke-dasharray="10, 100"
+                    d="M18 2.0845
+a 15.9155 15.9155 0 0 1 0 31.831
+a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- GRAFICO -->
+
+            <div id="circle-exp">
+              <div class="inter">
+                <span></span>
+
+                <b></b>
+              </div>
+              <div id="certificate"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="wrong-wrap" class="container">
+          <div><h2>Wrong</h2></div>
+          <div id="wrongPerc"></div>
+          <div class="inter"><span id="numOfWrong"></span>/10 questions</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer">
+        <div id="rateUs">
+          <button id="rate-btn">RATE US</button>
+        </div>
+      </div>
+    </footer>
+    <script src="js/results.js"></script>
+  </body>
+</html>

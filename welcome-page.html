@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epicode - Welcome Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/welcome-page-style.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <div id="logo-epicode">
+          <img
+            src="assets/img/epicode_logo.png"
+            alt="epicode-logo"
+            width="160px"
+          />
+        </div>
+
+        <div id="main-title">
+          <h1 class="outer">Welcome to <span>your exam</span></h1>
+        </div>
+      </header>
+
+      <main class="inter">
+        <div>
+          <h2>Instructions</h2>
+
+          <p>
+            We don't expect most engineers to know the answers to all of these
+            questions, so don't worry if you're unsure of a few of them.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              Each question is <span>timed</span> and can only be
+              <span>answered once.</span>
+            </li>
+            <li>
+              Changing browser tab or opening other windows will
+              <span>invalidate the question.</span>
+            </li>
+            <li>This exam will take approx. <span>0-5 minutes.</span></li>
+          </ul>
+        </div>
+      </main>
+
+      <footer class="inter">
+        <form id="form">
+          <div id="divide">
+            <div id="div-checkbox">
+              <div id="check">
+                <input type="checkbox" id="checkbox" required />
+              </div>
+              <div id="lableforcheck">
+                <label for="checkbox"
+                  >I promise to answer myself without help from anyone</label
+                >
+              </div>
+            </div>
+
+            <div id="div-button">
+              <button id="button" class="inter" type="submit">PROCEED</button>
+            </div>
+          </div>
+        </form>
+      </footer>
+    </div>
+    <script src="./js/welcome.js"></script>
+  </body>
+</html>

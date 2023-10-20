@@ -1,0 +1,180 @@
+body {
+  overflow: hidden;
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+}
+header {
+  height: 17vh;
+}
+
+#logo > img {
+  padding: 50px 125px;
+}
+
+.questions-wrap {
+  color: white;
+}
+footer {
+  text-align: center;
+  color: white;
+  height: 15vh;
+  padding-top: 10px;
+}
+.question {
+  display: block;
+  text-align: center;
+  font-size: 45px;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 12vh;
+  padding-bottom: 7vh;
+}
+.answers button.selectedAnswer {
+  background-color: rgb(183, 1, 138);
+  border-top: 3.5px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 0.5px solid;
+  border-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.4)
+    rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.4);
+}
+.answers {
+  text-align: center;
+}
+.answers > button {
+  text-align: center;
+  font-size: 1em;
+  margin: 15px;
+  min-width: 300px;
+  height: 65px;
+  border-radius: 100px;
+  border-top: 3.5px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 0.5px solid;
+  border-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.4)
+    rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  letter-spacing: 0.6px;
+}
+section {
+  display: none;
+}
+.show {
+  display: block;
+}
+#timer-wrap-cover {
+  margin-left: 80vw;
+  transform: translateY(-100px);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: white;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.593);
+}
+#timer-wrap {
+  text-align: center;
+  transform: translate(-10px, -10px);
+}
+#timer {
+  margin-top: 25px;
+  font-size: 0.5em;
+  transform: translate(9px, 32px);
+}
+#timer > span {
+  display: block;
+  font-size: 5em;
+}
+.circle {
+  transition: all 1s ease-in;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: rgb(3, 207, 207);
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+footer {
+  margin-top: 30px;
+  letter-spacing: 2.5px;
+}
+footer b {
+  color: rgb(183, 1, 138);
+}
+
+#send.selectedBtn {
+  border: 3px solid rgb(183, 1, 138);
+  border-radius: 20px;
+  background-color: rgb(183, 1, 138);
+}
+#btn-wrap {
+  text-align: center;
+  padding: 50px;
+}
+#send {
+  font-size: 1em;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+#send.selectedBtn {
+  border-top: 3.5px solid;
+  border-right: 0.9px solid;
+  border-left: 0.9px solid;
+  border-bottom: 0.5px solid;
+  border-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.4)
+    rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.4);
+}
+#finished {
+  margin-top: 150px;
+  font-size: 2em;
+  text-align: center;
+}
+#finished button {
+  transition: all 1.2s;
+  margin-top: 170px;
+  background: none;
+  color: white;
+  padding: 20px;
+  border-color: rgb(183, 1, 138);
+}
+
+#finished button:hover {
+  transition: all 0.9s;
+  box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.15);
+  border-color: white;
+  background-color: transparent;
+  transform: translateY(-5px);
+  color: white;
+  cursor: pointer;
+}
+#send:hover {
+  cursor: pointer;
+  transition: all 0.8s;
+  color: red;
+  letter-spacing: 1px;
+}
+#send.selectedBtn:hover {
+  letter-spacing: 0.1px;
+  transition: all 0.8s;
+  cursor: pointer;
+  color: rgb(3, 207, 207);
+}
+#checkres {
+  display: inline-block;
+  color: rgb(183, 1, 138);
+  padding-top: 10px;
+  font-size: 1.2em;
+}

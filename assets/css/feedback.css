@@ -1,0 +1,117 @@
+body {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.Logo {
+  height: 17vh;
+}
+header img {
+  padding: 50px 125px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.title h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 0.05em;
+  margin-top: 0.6em;
+}
+
+.title h3 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+#stars {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.star {
+  font-size: 3em;
+  color: #000423;
+  cursor: pointer;
+  margin: 0.1em;
+}
+
+.star.selected {
+  color: #00ffff;
+}
+
+#comment-area h3 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.3em;
+  color: white;
+}
+
+#comment-area {
+  text-align: center;
+}
+#comment-area textarea {
+  resize: none;
+}
+
+#comment {
+  width: 80%;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: none;
+  background-color: transparent;
+  width: 65%;
+  overflow: hidden;
+  padding-top: 3.5em;
+  padding-bottom: 0px;
+  padding-left: 55px;
+  color: white;
+  font-size: 1.2em;
+}
+#line {
+  margin: 0 auto;
+  background-color: #c2138d;
+  width: 69%;
+  height: 2px;
+  transform: translate(18px, -22px);
+}
+
+#comment::placeholder {
+  color: #767676;
+  font-family: "inter", sans-serif;
+  width: 15em;
+  font-size: 0.8em;
+}
+
+#comment-area button {
+  margin-top: 5em;
+  width: 220px;
+  height: 60px;
+  background-color: #00ffff;
+  border: none;
+  box-shadow: 0px 0px 25px #01ffffd3;
+}
+
+#comment-area button span {
+  font-family: "outfit", sans-serif;
+  font-size: 1.6em;
+  font-weight: 800;
+  color: rgb(0, 0, 58);
+  text-shadow: 0px 2px 5px rgba(82, 241, 255, 0.62);
+}
+
+textarea:focus {
+  outline: none;
+}
+#moreInfo:hover {
+  cursor: pointer;
+}

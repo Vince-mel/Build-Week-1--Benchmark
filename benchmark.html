@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/benchmark.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <title>Epicode - Benchmark Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="logo-wrap">
+        <div id="logo">
+          <img src="./assets/img/epicode_logo.png" alt="logo" width="160px" />
+        </div>
+        <div id="timer-wrap-cover">
+          <div id="timer-wrap">
+            <div id="timer">SECONDS <span id="timer-num"></span> REMAINING</div>
+          </div>
+          <div class="circle"></div>
+        </div>
+      </header>
+      <section class="questions-wrap show"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap"></section>
+      <section class="questions-wrap" id="finished">
+        <div class="finish">
+          Congratulation, you've finished the test. <br />
+          <span id="checkres">Check to see results</span>
+        </div>
+        <div>
+          <button id="checkResult">CHECK RESULTS</button>
+        </div>
+      </section>
+      <div id="btn-wrap">
+        <div><button id="send">Confirm</button></div>
+      </div>
+      <footer>
+        <div>QUESTION <span id="question-num"> 1 </span><b> / 10 </b></div>
+      </footer>
+    </div>
+    <script src="js/benchmark.js"></script>
+  </body>
+</html>

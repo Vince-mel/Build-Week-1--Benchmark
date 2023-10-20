@@ -1,0 +1,183 @@
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+}
+
+/* qui inizia header */
+header {
+  height: 15vh;
+}
+
+header img {
+  margin: 50px 125px;
+}
+#resultsWrap {
+  width: 100vw;
+  text-align: center;
+}
+
+/* qui inizia main */
+
+main h1 {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+main h3 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+main h2 {
+  display: inline-block;
+  color: white;
+  font-size: 60px;
+}
+#container-wrap {
+  text-align: center;
+}
+#correct-wrap {
+  padding-right: 80px;
+}
+#wrong-wrap {
+  padding-left: 80px;
+}
+.container {
+  text-align: center;
+  padding-top: 50px;
+  display: inline-block;
+}
+.flex-wrapper {
+  z-index: 0;
+}
+
+/* GRAFICO CSS */
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  width: 60em;
+  height: 84em;
+  /* margin-top: 20em; */
+  /* left: 26em; */
+  /* top: 22em; */
+  top: 39em;
+  left: 29em;
+  transform: translate(-83%, -50%);
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  /* max-width: 17em; */
+  width: 60.5em;
+  height: 23em;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #c2138d;
+  stroke-width: 4;
+}
+
+.circle_1 {
+  fill: none;
+  stroke-width: 4.3;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.blue .circle_1 {
+  stroke: #01ffff;
+}
+#rateUs {
+  z-index: 1;
+}
+
+/* GRAFICO CSS */
+
+#circle {
+  position: relative;
+  border-radius: 50%;
+  border-width: 23px;
+  border-style: solid;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 50px 0px rgba(0, 0, 0, 0.817);
+}
+
+b {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #01ffff;
+  font-weight: 700;
+  font-size: 1.15em;
+}
+#wrongPerc,
+#correctPerc {
+  font-size: 3em;
+}
+
+#circle-exp {
+  width: 100%;
+  transform: translateY(10px);
+  line-height: 1.1em;
+}
+#certificate {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+}
+#circle-exp > div > span {
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+footer button {
+  box-shadow: 0px 0px 40px 0.5px #01ffff54;
+}
+footer button:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  transform: translateY(10vh);
+}
+footer button {
+  margin-top: 80px;
+  margin-left: 25px;
+  font-size: 22px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 0.9em 3em;
+}
+#numOfCorrect,
+#numOfWrong {
+  display: inline-block;
+  margin-top: 10px;
+}
